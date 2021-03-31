@@ -39,6 +39,9 @@ function main() {
   Ctxt.closePath();
   if (Information.loading) {
     window.requestAnimationFrame(main);
+  } else {
+    Ctxt.clearRect(0, 0, Canvas.width, Canvas.height);
+    Canvas.classList.add("None");
   }
 }
 
